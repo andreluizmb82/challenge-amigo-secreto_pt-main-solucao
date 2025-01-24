@@ -12,16 +12,30 @@ Ele sera importado tanto pela solução padrão quanto pela solução personaliz
   --color-button-hover: #e55720;
   --color-text: #444444;
   --color-white: #ffffff;
+
+  /* 
+    Optei por esta abordagem para ajustar o height do body para que o rodapé fique sempre fixo no final da tela. 
+    A outra abordagem seria fazer esse ajuste via javascript, mas achei mais interessante fazer isso via css. 
+    Essa foi uma oportunidade de explorar recursos css que eu não conhecia. 
+    E me adaptar a certas limitações do css, como a dificuldade de determinar a altura da tela, para calcular a altura do body.
+    O resultado final não foi excelente, mas foi bom o suficiente.😎
+
+     Rodapé adicionado para fins de teste e aprendizado, esta fora do escopo dos requisitos originais do projeto!
+  */
+  --height-footer: 90px; /* Fixando a altura do rodapé */
+  --height-body-portrait: calc(100vh + var(--height-footer)*2); /* Ajusta a altura do body para que o rodapé não esconda o botão "Sortear Amigo". */
+  --height-body-landscape: calc(100vw + var(--height-footer)); /* Ajusta a altura do body para que o rodapé não esconda o botão "Sortear Amigo". */
+
 }
 
 body {
-  height: 100vh;
+  height: var(--height-body-portrait); /* Ajusta a altura do body para que o rodapé não esconda o botão "Sortear Amigo". */
   background-color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
-  margin: auto;
+  padding: 0 10% var(--height-footer);
+  margin: 0 auto;
 }
 
 .main-content {
@@ -162,8 +176,97 @@ ul {
   background-color: var(--color-button-hover);
 }
 
+
+
+/* 
+  Rodapé: inicio da estilização rodapé. 
+  Rodapé adicionado para fins de teste e aprendizado, esta fora do escopo dos requisitos originais do projeto!
+  O objetivo é fixar o rodapé no final da tela, independente do tamanho e orientação da tela, e quantidade de nomes na lista.
+*/
+body{
+  padding-bottom: 60px; /* Define um espaço para o rodapé */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  
+  width: 80%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: var(--height-footer);
+}
+
+.banner-container{
+  margin-top: 6px;
+}
+.banner-container img {
+  margin-left: 25px;
+}
+
+#linksProjetos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #c4c4c4;
+  margin-top: 4px;
+}
+
+#linksProjetos a{
+  color: #c4c4c4;
+  /* background-color: #040116; */
+  background-color: var(--color-primary);
+  border-radius: 7px;
+  font-size: 17px;
+  width: 40%;
+  padding: 8px 0;
+}
+/* Fim da estilização do rodapé */
+
+/* O estiloa a baixo atribui maior responsividade à pagina */
 @media (orientation: portrait) {
   .header-banner {
-    flex-direction: column;
+    flex-direction: column; /* Altera a direção do flex para coluna, de modo que o Titulo principal fique acima da imagem*/
   }
+  .header-banner h1{
+    text-align: center;
+  }
+  body{
+    height: var(--height-body-portrait); /* Ajusta a altura do body para que o rodapé não esconda o botão "Sortear Amigo". */
+  }
+
+  .button-draw{
+    width: 80%;
+    margin: auto;
+  }
+
+  .banner-container img {
+    height: 21px; /* altura do banner em portrait */
+    width: 65px;
+    /* width: 58px; */
+    margin-left: 7px;
+  }
+
+  .can-be-hidden{
+    display: none;
+  }
+
+  #linksProjetos a{
+    font-size: 15px;
+  }
+}
+
+@media ( (orientation: landscape) and (max-width: 1000px) ) {
+  body {
+    height: var(--height-body-landscape); /* Ajusta a altura do body para que o rodapé não esconda o botão "Sortear Amigo". */
+  }
+  .banner-container img {
+    height: 25px; /* altura do banner em portrait */
+    width: 70px;
+    margin-left: 15px;
+   }
+
+   
 }

@@ -1,45 +1,82 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Amigo Secreto</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <main class="main-content">
-      <header class="header-banner">
-        <h1 class="main-title">Amigo Secreto</h1>
-        <img src="assets/img/amigo-secreto.png" alt="Imagem representativa de amigo secreto" />
-      </header>
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Amigo Secreto</title>
+</head>
 
-      <section class="input-section">
-        <h2 class="section-title">Digite o nome dos seus amigos</h2>
-        <div class="input-wrapper">
-          <input type="text" id="amigo" class="input-name" placeholder="Digite um nome" />
-          <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
-        </div>
+<body>
+  <main class="main-content">
+    <header class="header-banner">
+      <h1 class="main-title">Amigo Secreto</h1>
+      <img src="assets/img/amigo-secreto.png" alt="Imagem representativa de amigo secreto" />
+    </header>
 
-        <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-        <ul id="resultado" class="result-list" aria-live="polite"></ul>
+    <section class="input-section">
+      <h2 class="section-title">Digite o nome dos seus amigos</h2>
+      <div class="input-wrapper">
+        <input type="text" id="amigo" class="input-name" placeholder="Digite um nome" />
+        <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+      </div>
 
-        <div class="button-container">
-          <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-            <img src="assets/img/play_circle_outline.png" alt="Ícone para sortear" />
-            Sortear amigo
-          </button>
-        </div>
-      </section>
-    </main>
+      <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+      <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
-    <script src="app.js" defer></script>
-  </body>
+      <div class="button-container">
+        <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+          <img src="assets/img/play_circle_outline.png" alt="Ícone para sortear" />
+          Sortear amigo
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé adicionado para fins de teste e aprendizado, esta fora do escopo dos requisitos originais do projeto!-->
+  <footer>
+    <div class="banner-container">
+      <a href="https://github.com/andrebg28" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"
+          alt="GitHub">
+      </a>
+      <a href="https://github.com/andreluizmb82" target="_blank" class="can-be-hidden">
+        <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"
+          alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/andre-luiz-moura-borges-33b3aa332/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+          alt="LinkedIn">
+      </a>
+      <a href="https://x.com/AndreLuizMb82" target="_blank">
+        <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"
+          alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com/andreluizmb82/" target="_blank">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+          alt="Instagram">
+      </a>
+    </div>
+
+    <div id="linksProjetos">
+      <a href="https://andreluizmb82.github.io/challenge-amigo-secreto_pt-main-solucao-personalizada/" target="_blank">
+        Solução Personalizada!
+      </a>
+
+      <a href="https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main-solucao-personalizada" target="_blank">
+        Repositório Solução Personalizada!
+      </a>
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+  <script src="app.js" defer></script>
+</body>
+
 </html>
