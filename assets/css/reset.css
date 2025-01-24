@@ -1,0 +1,29 @@
+/* Minimal Reset CSS */
+
+/* Reset CSS para remover estilos padrão do navegador */
+*, *::before, *::after {
+  margin: 0; /* Remove as margens padrão de todos os elementos */
+  padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+  box-sizing: border-box; /* Define que a largura e altura dos elementos incluem o preenchimento e a borda, facilitando o dimensionamento e o layout */
+  border: none; /* Remove as bordas padrão de elementos como imagens e botões */
+  font-family: inherit; /* Faz com que todos os elementos herdem a fonte do elemento pai, garantindo consistência no estilo de texto */
+  font-size: 100%; /* Define o tamanho da fonte como 100% do tamanho do elemento pai, evitando problemas de escalonamento em diferentes navegadores */
+  vertical-align: baseline; /* Alinha verticalmente os elementos ao baseline (linha de base) do texto, corrigindo problemas de alinhamento em elementos inline como imagens */
+  text-decoration: none; /* Remove sublinhados de links */
+  list-style: none; /* Remove marcadores de listas, como pontos ou números, facilitando a estilização personalizada */
+}
+/*
+Escolhe a abordagem de resetar os estilos padrão do tanto dos elementos quanto dos pseudos elementos po dois motivos:
+  1. O tamanho do projeto é pequeno, então o impacto no desempenho da renderização é mínimo.
+  2. Garantir a consistência do estilo, caso eu resolva usar pseudos elementos no futuro.
+OBS: Caso eu note algum impacto no desempenho da renderização, edito este arquivo para aplicar o reset apenas nos elementos, 
+mantendo os pseudos elementos com seus estilos padrão so navegador.
+*/
+
+body {
+  line-height: 1;  /* Define o espaçamento entre linhas padrão */
+}
+
+a {
+  text-decoration: none; /* Remove sublinhado padrão de links */
+}
