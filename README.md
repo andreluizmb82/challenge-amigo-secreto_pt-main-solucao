@@ -85,7 +85,13 @@ E para deixar o projeto mais responsivo, foi adicionado o seguinte código no ar
 
 ## Refatoração
 
-O código atual será refatorado com o objetivo de melhorar a organização, modularização e legibilidade. A refatoração também visa dividir e organizar as funções para que cada uma tenham uma única responsabilidade.
+Considero o código concluído, apos a ultima refatoração em app.js.
+
+O código foi refatorado com o objetivo de melhorar a organização, modularização e legibilidade. 
+
+Ela também visou dividir e organizar as funções para que cada uma tenham uma única responsabilidade.
+
+Aproveitei para adicionar um comentário no código, atribuindo uma camada de clareza adicional. 
 
 ## Repositório
 
