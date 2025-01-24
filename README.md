@@ -85,24 +85,45 @@ E para deixar o projeto mais responsivo, foi adicionado o seguinte código no ar
 
 ## Refatoração
 
-Considero o código concluído, apos a ultima refatoração em app.js.
+Apos considerar o código concluído, resolvi criar um rodapé. Isso me levou a reconhecer e admitir uma realidade. Um software nunca esta realmente concluído, ele apenas chega a um ponto em que o consideramos utilizável e bom o suficiente, ao atender os requisitos de negócio pre definidos.
 
-O código foi refatorado com o objetivo de melhorar a organização, modularização e legibilidade. 
+A primeira refatoração tinha os seguintes objetivos:
+- [x] O código foi refatorado com o objetivo de melhorar a organização, modularização e legibilidade. 
+- [x] Ela também visou dividir e organizar as funções para que cada uma tenham uma única responsabilidade.
+- [x] Aproveitei para adicionar um comentário no código, atribuindo uma camada de clareza adicional. 
 
-Ela também visou dividir e organizar as funções para que cada uma tenham uma única responsabilidade.
+Segunda refatoração tinha os seguintes objetivos:
+- [x] Criar um rodapé fixo.
+- [x] Adicionar de perfil do GitHub, LinkedIn, X - (Twitter) e Instagram.
+- [x] Adicionar links para o repositório do projeto.
+- [x] Adicionar link para a solução personalizada.
+- [x] Comentar o código css aplicado nesta refatoração.
+- [x] Atualizar o README.md.
+- [x] Adição de mensagem de erro se tentar sortear sem ter adicionar nome ao menos dois nomes à lista de amigos.
 
-Aproveitei para adicionar um comentário no código, atribuindo uma camada de clareza adicional. 
+## Repositórios Relacionados
 
-## Repositório
+O código-fonte do projeto que contem a solução personalizada do desafio esta disponível no seguinte repositório:
 
-O código-fonte do projeto está disponível no GitHub:
+[https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main-solucao-personalizada](https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main-solucao-personalizada)
 
-[https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main-solucao](https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main-solucao)
+O repositório principal do projeto que contem as duas soluções e a configuração do meu ambiente de desenvolvimento está disponível no seguinte repositório:
+
+[https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main](https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main)
+
+## Site
+
+O projeto está hospedado no GitHub Pages:
+[https://andreluizmb82.github.io/challenge-amigo-secreto_pt-main-solucao/](https://andreluizmb82.github.io/challenge-amigo-secreto_pt-main-solucao/)
 
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE](https://github.com/andreluizmb82/challenge-amigo-secreto_pt-main/blob/main/LICENSE) para mais informações.
 
-## Contato
+## Perfis
 
-Seu Andre Luiz Moura Borges/[Linkedin](https://www.linkedin.com/in/andre-luiz-moura-borges-33b3aa332/)
+[![Github de projetos](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white 'Github que contem projetos com aplicabilidade real.')](https://github.com/andrebg28)
+[![Github didático](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white 'Github que contem repositorios de assuntos que estou aprendendo em cursos, ou desafios didático que proponho para mim mesmo.')](https://github.com/andreluizmb82)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white 'Meu LinkedIn')](https://www.linkedin.com/in/andre-luiz-moura-borges-33b3aa332/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white 'Meu X - (Twitter)')](https://x.com/AndreLuizMb82)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white 'Meu Instagram')](https://www.instagram.com/andreluizmb82/)
