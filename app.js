@@ -23,7 +23,12 @@ function adicionarAmigo() {
 
 function sortearAmigo() {
   // Verificar se há amigos na lista
-  if (friendsSet.size <= 0) return;
+  if (friendsSet.size <= 1) {
+    // Exibir mensagem de erro
+    result.textContent = 'Insira pelo menos dois amigos para sortear.';
+    // Interromper a execução da função
+    return;
+  }
 
   // Selecionar um amigo aleatório
   const friendSelected = drawFriend();
@@ -96,7 +101,7 @@ function cleanAndFocusInput() {
   inputFriend.focus();
 }
 
-function friendsClear() {
+function friendsClear() { 
   // Limpar o conjunto de amigos
   friendsSet.clear();
   // Limpar a lista de amigos
